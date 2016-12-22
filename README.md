@@ -12,8 +12,14 @@ http://unix.stackexchange.com/questions/89213/partitioning-using-2-hard-disks-ss
 ## Create a bootable USB from iso
 
 ```
+# From linux
 sudo fdisk -l
 dd if=filename.iso of=/dev/usbdevice
+
+# From Mac OS
+diskutil list
+sudo umount /dev/disk1 # make sure its the drive you are putting the image on
+sudo dd if=~/Downloads/some-dist.iso of=/dev/disk1 bs=1m
 ```
 
 ----
