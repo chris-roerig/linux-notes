@@ -32,6 +32,8 @@ vim synaptics-settings.sh
 #!/bin/bash
 synclient RightButtonAreaLeft=0
 synclient RightButtonAreaTop=0
+synclient VertEdgeScroll=1
+synclient VertTwoFingerScroll=1
 
 chmod a+rx ~/.synaptics-custom-settings.sh
 ```
